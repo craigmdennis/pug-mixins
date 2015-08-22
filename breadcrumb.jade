@@ -16,5 +16,6 @@ mixin breadcrumb(levels)
           if count < levels.length
             i.breadcrumb__symbol(aria-hidden="true") /
           meta(itemprop="position" content!=count)
-          
-//- Called +breadcrumb([["Home", "/home.html"], ["About", "/about.html"], ["Contact", "/contact.html"]])
+    
+//- USAGE      
+//- +breadcrumb([["Home", "/home.html"], ["About", "/about.html"], ["Contact", "/contact.html"]])
