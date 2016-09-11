@@ -1,5 +1,6 @@
 # Helpful Jade Mixins
-#### A series of helpful JADE mixins to be included in your projects.
+#### A series of helpful Pug mixins to be included in your projects.
 
-- [Breadcrumbs](https://github.com/craigmdennis/jade-mixins/blob/master/breadcrumb.jade)
-- [SVG Icon Sprite](https://github.com/craigmdennis/jade-mixins/blob/master/svg-icon.jade)
+- [Breadcrumbs](https://github.com/craigmdennis/jade-mixins/blob/master/breadcrumb.pug)
+- [SVG Icon Sprite](https://github.com/craigmdennis/jade-mixins/blob/master/svg-icon.pug)
+- [Simple Loop](https://github.com/craigmdennis/jade-mixins/blob/master/loop.pug)
