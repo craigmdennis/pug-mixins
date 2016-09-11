@@ -1,0 +1,7 @@
+//- You will need an svg icon sprite
+mixin icon(icon)
+  svg(class="icon--#{icon}" aria-hidden=true role="presentation")&attributes(attributes)
+    use(xlink:href="#icon-#{icon}")
+
+//- USEAGE
+//- +icon('chevron-left')(class="only-applied-to-parent")

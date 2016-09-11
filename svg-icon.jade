@@ -1,7 +1,0 @@
-//- You will need an svg icon sprite: http://fontastic.me
-mixin icon(icon, parentclasses)
-  svg(class="stack-icon stack-icon--#{icon} #{parentclasses}" aria-hidden=true role="presentation")
-    use(xlink:href="#icon-#{icon}")
-
-//- Usage
-+icon('chevron-left', 'classes only applied to parent')
