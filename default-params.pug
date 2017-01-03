@@ -1,0 +1,17 @@
+mixin navigation_li(name, attr)
+
+  - var li_class = attr.li_class || ''
+  - var a_class = attr.a_class || ''
+  
+  li(class=li_class)
+    a(class=a_class)= name
+
+//- USEAGE
+  +navigation_li('Anchor text here', {
+    a_class: 'c-main-navigation__link',
+    li_class: 'active'
+  })
+
+  +navigation_li('More anchor text here', {
+    a_class: 'c-main-navigation__link'
+  })
