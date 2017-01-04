@@ -1,0 +1,8 @@
+mixin page-header(elem)
+  - var elem = elem || 'div'
+  #{elem}.c-class
+    block
+
+//- USEAGE
+  +page-header('header')
+    h1 Some content
