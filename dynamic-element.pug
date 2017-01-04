@@ -4,5 +4,11 @@ mixin page-header(elem)
     block
 
 //- USEAGE
+
+  // Will show <header class="c-class"><h1>Some content</h1></header>
   +page-header('header')
+    h1 Some content
+  
+  // Will show <div class="c-class"><h1>Some content</h1></div>
+  +page-header
     h1 Some content
