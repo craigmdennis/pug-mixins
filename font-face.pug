@@ -1,0 +1,30 @@
+$font-name: 'GT-Walsheim';
+$font-path: '../fonts/';
+
+$weights: (
+  400 'Regular',
+  300 'Light',
+  300 'Regular-Oblique' italic,
+  500 'Medium',
+  600 'Bold' bold);
+
+@each $weight in $weights {
+
+  $int: nth($weight, 1);
+  $string: nth($weight, 2);
+  $src: '#{$font-path}#{$font-name}-#{$string}';
+  $length: length($weight);
+
+  @font-face {
+    font-family: 'GT Walsheim Pro';
+    font-weight: $int;
+    src: url('#{$src}.eot') format('embedded-opentype'); /* IE9 Compat Modes */
+    src: url('#{$src}.woff') format('woff'),
+         url('#{$src}.ttf') format('ttf'),
+         local('#{$font-name}-#{$string}');
+
+    @if ($length > 2) {
+      font-style: nth($weight, 3);
+    }
+  }
+}
